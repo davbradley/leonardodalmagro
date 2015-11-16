@@ -6,7 +6,8 @@
         "outputDir": "../css/",
         "includePaths": [],
         "imagePath": null,
-        "sourceComments": "map",
+        "sourceComments": true,
+        "sourceMap": true,
         "outputStyle": "compressed"
       }
     }
