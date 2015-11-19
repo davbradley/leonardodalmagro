@@ -1,5 +1,57 @@
 @import "materialize";
 
+$alpha: rgba(0, 0, 0, .1) !default;
+
+#index-banner {
+	margin:0;
+	padding-top:0;
+	background-color: black;
+	background-image: url(https://cdn.shopify.com/s/files/1/0327/9937/t/6/assets/slide_4.jpg?11433573205319742054);
+	/*background-image: url(http://thepaperwall.com/wallpapers/girls/big/big_15ea2f4ba0598368e14996bdb58cf9dcda582644.jpg);*/
+	background-size: cover;
+	background-position: center bottom;
+	.hero-home {
+		min-height: 500px;
+	}
+}
+
+nav.nav-alpha {
+  color: #000000;
+  @extend .z-depth-0;
+text-transform: uppercase;
+  background-color: $alpha;
+	.nav-alpha-wrapper {
+		margin: 0 20px;
+		.nav-shopping-cart {
+			i {
+				font-size: 1.25rem;
+				margin: 0 5px;
+			}
+		}
+	}
+}
+
+nav.nav-footer {
+	ul {
+		li {
+			text-transform: uppercase;
+			font-weight: 100;
+			margin: 0 10px;
+		}
+	}
+	.input-field {
+		label {
+			display:none;
+		}
+	}
+	.lifeasleo {
+		background-color:$primary-color-light;
+		text-transform: uppercase;
+		font-style: italic;
+		color: $primary-color;
+	}
+}
+
 .icon-block {
   padding: 0 15px;
 }
@@ -8,6 +60,31 @@
   font-size: inherit;
 }
 
-.custom-text {
-	font-size: 3rem;
+.category-panel {
+	text-align: center;
+	.card-title {
+		font-size: 1.5rem;
+		font-weight: 100;
+		text-transform: uppercase;
+		hr {
+			width: 50%;
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+		}
+	}
+}
+
+.fab-logo {
+	height: 30px;
+	width: 30px;
+	margin: 12px 0 12px 2px;
+}
+
+.footer-copyright {
+	i {
+		font-size: 1.5rem;
+		margin-left: 5px;
+	}
 }

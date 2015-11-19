@@ -1,15 +1,16 @@
 {
-  "path": {
-    "sass/style.scss": {
-      "sass.enabled": true,
-      "sass.options": {
-        "outputDir": "../css/",
-        "includePaths": [],
-        "imagePath": null,
-        "sourceComments": true,
-        "sourceMap": true,
-        "outputStyle": "compressed"
-      }
+    "path": {
+        "sass/style.scss": {
+            "sass.enabled": true,
+            "sass.options": {
+                "outputDir": "../css/",
+                "includePaths": [],
+                "imagePath": null,
+                "sourceComments": true,
+                "sourceMap": true,
+                "outputStyle": "compressed"
+            },
+            "linting.collapsed": false
+        }
     }
-  }
 }
