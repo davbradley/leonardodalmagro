@@ -2,10 +2,138 @@
 
 $alpha: rgba(0, 0, 0, 0) !default;
 
-#index-banner {
+h1 {
+		text-transform: uppercase;
+		font-weight: 100;
+}
+
+p.lead {
+	font-weight: 100;
+	font-size: 1.25rem;
+}
+
+@media screen and (max-width: 599px) {
+	.nav-footer {
+	.nav-wrapper {
+		ul.breadcrumbs {
+			li {
+				a {
+					i {
+						margin-top: 12px;
+					}
+				}
+			}
+		}
+		}
+	}
+}
+
+.card-nav {
+	.card-content {
+		.card-title {
+			line-height: 1.75rem;
+			font-weight: 100;
+		}
+		p {
+			margin-top: 10px;
+			font-weight: 100;
+		}
+	}
+	.card-action {
+		
+	}
+}
+
+
+
+/* PRODUCT */
+
+.nav-footer {
+	.nav-wrapper {
+		ul.breadcrumbs {
+			li {
+				margin-right: 0;
+				padding-right: 0;
+
+				a {
+					margin-right: 0;
+					padding-right: 0;
+				}
+				a:before {
+				float: left;
+				content: "/";
+					padding-right: 20px;
+			}
+			}
+				li:first-child {
+					a:before {
+						content: none;
+					}
+				}
+		}
+	}
+}
+
+.product-section {
+	.product-name {
+	font-size: 1.5rem;
+	line-height: 2rem;
+	margin-top: 10px;
+	}
+	.product-feature-title {
+		@extend .product-name;
+		font-size: 1rem;
+		line-height: 1.5rem;
+	}
+}
+
+.product-related-section {
+	.product-related-title {
+		font-size: 2rem;
+	}
+}
+
+
+
+
+
+
+/* CATEGORY */
+
+#category-banner {
+	background-image: url(http://thepaperwall.com/wallpapers/girls/big/big_15ea2f4ba0598368e14996bdb58cf9dcda582644.jpg);
+	background-size: cover;
+	background-position: center center;
+	height: 250px;
+}
+
+.no-pad-bot {
 	margin:0;
 	padding-top:0;
 	background-color: black;
+}
+
+/* ABOUT */
+
+.about-page {
+	background-image:url();
+	background-color: #000;
+	min-height: 1600px;
+	p {
+		font-weight: 100;
+	}
+}
+
+#about-banner {
+	@extend #category-banner;
+	height: 500px;
+	background-image:url("../images/IMG_0235.jpg");
+	background-position: right top;
+}
+
+/* GLOBAL AND HOMEPAGE */
+
+#index-banner {
 	background-image: url(https://cdn.shopify.com/s/files/1/0327/9937/t/6/assets/slide_4.jpg?11433573205319742054);
 	/*background-image: url(http://thepaperwall.com/wallpapers/girls/big/big_15ea2f4ba0598368e14996bdb58cf9dcda582644.jpg);*/
 	background-size: cover;
@@ -13,6 +141,10 @@ $alpha: rgba(0, 0, 0, 0) !default;
 	.hero-home {
 		min-height: 500px;
 	}
+}
+
+.bg-alpha {
+	background-color: $alpha;
 }
 
 nav.nav-alpha {
@@ -80,6 +212,10 @@ nav.nav-footer {
 	height: 30px;
 	width: 30px;
 	margin: 12px 0 12px 2px;
+}
+
+footer.page-footer {
+	margin-top:0 !important;
 }
 
 .footer-copyright {
